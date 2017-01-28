@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroPelicula.UI.Registro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,11 @@ namespace RegistroPelicula
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void categoriasPeliculaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new RegistroCategorias().Show();
         }
     }
 }
